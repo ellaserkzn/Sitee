@@ -1,0 +1,653 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Лазерная эпиляция в Казани — Студия Моя Проспект</title>
+  <meta name="description" content="Лазерная эпиляция в Казани (Проспект Победы 139А к2). Диодный лазер: бикини, подмышки, ноги, лицо, руки. Онлайн-запись в WhatsApp." />
+
+  <!-- OpenGraph -->
+  <meta property="og:title" content="Лазерная эпиляция в Казани — Студия Моя Проспект" />
+  <meta property="og:description" content="Диодная лазерная эпиляция: бикини, подмышки, ноги, лицо. Запись в WhatsApp." />
+  <meta property="og:type" content="website" />
+
+  <style>
+    :root{
+      --bg:#070707;
+      --card:#0d0d0f;
+      --gold:#d6b25e;
+      --gold2:#f1d58a;
+      --text:#f3f3f3;
+      --muted:#bdbdbd;
+      --line:rgba(214,178,94,.25);
+      --shadow: 0 18px 50px rgba(0,0,0,.55);
+      --radius: 18px;
+      --radius2: 28px;
+      --max: 1140px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, "Noto Sans", "Liberation Sans", sans-serif;
+      background:
+        radial-gradient(900px 520px at 80% 0%, rgba(214,178,94,.14), transparent 60%),
+        radial-gradient(800px 480px at 10% 20%, rgba(241,213,138,.08), transparent 55%),
+        linear-gradient(180deg, #060606 0%, #0b0b0c 40%, #060606 100%);
+      color:var(--text);
+      line-height:1.5;
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:0 18px}
+    .topbar{
+      position:sticky; top:0; z-index:20;
+      backdrop-filter: blur(10px);
+      background: rgba(7,7,7,.62);
+      border-bottom: 1px solid rgba(214,178,94,.15);
+    }
+    .topbar .row{
+      display:flex; align-items:center; justify-content:space-between;
+      padding:12px 0;
+      gap:12px;
+    }
+    .brand{
+      display:flex; align-items:center; gap:10px;
+      font-weight:700; letter-spacing:.6px;
+    }
+    .logoDot{
+      width:34px; height:34px; border-radius:50%;
+      background: radial-gradient(circle at 30% 30%, var(--gold2), var(--gold));
+      box-shadow: 0 0 0 3px rgba(214,178,94,.15);
+    }
+    .nav{
+      display:flex; gap:14px; flex-wrap:wrap;
+      color:var(--muted);
+      font-size:14px;
+    }
+    .nav a:hover{color:var(--text)}
+    .cta{
+      display:flex; gap:10px; align-items:center; flex-wrap:wrap;
+    }
+    .btn{
+      border:1px solid rgba(214,178,94,.35);
+      background: linear-gradient(180deg, rgba(214,178,94,.22), rgba(214,178,94,.08));
+      color:var(--text);
+      padding:10px 14px;
+      border-radius: 999px;
+      font-weight:600;
+      letter-spacing:.2px;
+      box-shadow: 0 12px 30px rgba(0,0,0,.35);
+      transition: transform .12s ease, border-color .12s ease;
+      display:inline-flex; align-items:center; gap:8px;
+      cursor:pointer;
+    }
+    .btn:hover{transform: translateY(-1px); border-color: rgba(241,213,138,.6)}
+    .btn.secondary{
+      background: transparent;
+      border-color: rgba(255,255,255,.12);
+      color: var(--muted);
+      box-shadow:none;
+    }
+    .btn.secondary:hover{color:var(--text); border-color: rgba(214,178,94,.35)}
+    header.hero{padding:58px 0 22px;}
+    .heroGrid{
+      display:grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap:22px;
+      align-items:stretch;
+    }
+    .heroCard{
+      border:1px solid rgba(214,178,94,.16);
+      background: linear-gradient(180deg, rgba(13,13,15,.86), rgba(10,10,11,.72));
+      border-radius: var(--radius2);
+      padding:26px;
+      box-shadow: var(--shadow);
+      position:relative;
+      overflow:hidden;
+    }
+    .heroCard:before{
+      content:"";
+      position:absolute; inset:-120px -120px auto auto;
+      width:260px; height:260px;
+      background: radial-gradient(circle at 30% 30%, rgba(241,213,138,.28), rgba(214,178,94,.06), transparent 70%);
+      transform: rotate(25deg);
+    }
+    .kicker{
+      display:inline-flex; align-items:center; gap:8px;
+      font-size:13px; color:var(--muted);
+      border:1px solid rgba(214,178,94,.18);
+      padding:6px 10px; border-radius:999px;
+      background: rgba(214,178,94,.06);
+      position:relative; z-index:1;
+    }
+    h1{
+      margin:14px 0 8px;
+      font-size:44px;
+      line-height:1.1;
+      letter-spacing:-.6px;
+      position:relative; z-index:1;
+    }
+    .gold{
+      background: linear-gradient(90deg, var(--gold2), var(--gold));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .lead{
+      margin:0;
+      color:var(--muted);
+      font-size:16px;
+      position:relative; z-index:1;
+      max-width: 64ch;
+    }
+    .heroBadges{
+      display:flex; flex-wrap:wrap; gap:10px;
+      margin-top:16px;
+      position:relative; z-index:1;
+    }
+    .badge{
+      padding:8px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.04);
+      border:1px solid rgba(255,255,255,.08);
+      font-size:13px;
+      color:var(--text);
+    }
+    .heroActions{
+      display:flex; flex-wrap:wrap; gap:10px;
+      margin-top:18px;
+      position:relative; z-index:1;
+    }
+    .mini{
+      margin-top:14px;
+      color:rgba(189,189,189,.95);
+      font-size:13px;
+      position:relative; z-index:1;
+    }
+    .sideCard{
+      border:1px solid rgba(214,178,94,.16);
+      background: linear-gradient(180deg, rgba(13,13,15,.8), rgba(10,10,11,.6));
+      border-radius: var(--radius2);
+      padding:22px;
+      box-shadow: var(--shadow);
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      gap:14px;
+    }
+    .sideTitle{font-weight:700; letter-spacing:.2px}
+    .sideList{margin:0; padding:0 0 0 18px; color:var(--muted); font-size:14px}
+    .pill{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:12px;
+      border:1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.03);
+      padding:12px 14px;
+      border-radius: 16px;
+      font-size:14px;
+      color:var(--muted);
+    }
+    .pill strong{color:var(--text)}
+    section{padding:24px 0}
+    .sectionTitle{
+      display:flex; align-items:flex-end; justify-content:space-between;
+      gap:16px; flex-wrap:wrap;
+      margin-bottom:14px;
+    }
+    h2{margin:0; font-size:26px; letter-spacing:-.2px}
+    .sub{color:var(--muted); font-size:14px; margin:0}
+    .grid3{display:grid; grid-template-columns: repeat(3, 1fr); gap:14px}
+    .grid2{display:grid; grid-template-columns: repeat(2, 1fr); gap:14px}
+    .card{
+      border:1px solid rgba(214,178,94,.14);
+      background: rgba(13,13,15,.62);
+      border-radius: var(--radius);
+      padding:16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+    }
+    .card h3{margin:0 0 6px; font-size:16px}
+    .card p{margin:0; color:var(--muted); font-size:14px}
+    .card ul{margin:10px 0 0; padding:0 0 0 18px; color:var(--muted); font-size:14px}
+    .divider{height:1px; background: var(--line); margin:14px 0}
+    .priceRow{
+      display:flex; align-items:center; justify-content:space-between;
+      gap:12px; padding:10px 0;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+      color:var(--muted);
+      font-size:14px;
+    }
+    .priceRow:last-child{border-bottom:0}
+    .price{color:var(--text); font-weight:700}
+    .faq details{
+      border:1px solid rgba(255,255,255,.08);
+      background: rgba(255,255,255,.03);
+      border-radius: 16px;
+      padding:12px 14px;
+      margin-bottom:10px;
+    }
+    .faq summary{
+      cursor:pointer; color:var(--text); font-weight:600; list-style:none;
+    }
+    .faq summary::-webkit-details-marker{display:none}
+    .faq p{margin:8px 0 0; color:var(--muted); font-size:14px}
+    footer{
+      padding:28px 0 38px;
+      border-top: 1px solid rgba(214,178,94,.14);
+      color:var(--muted);
+      font-size:14px;
+    }
+    .contacts{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:14px;
+      align-items:start;
+    }
+    .mapBox{
+      border-radius: var(--radius);
+      overflow:hidden;
+      border:1px solid rgba(214,178,94,.14);
+      background: rgba(255,255,255,.02);
+      min-height: 320px;
+    }
+    .mutedLink{color:var(--muted); text-decoration:underline; text-decoration-color: rgba(214,178,94,.35)}
+    .mutedLink:hover{color:var(--text)}
+    .promoGrid{
+      display:grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap:12px;
+    }
+    .promoGrid img{
+      width:100%;
+      height:auto;
+      border-radius: var(--radius);
+      border:1px solid rgba(214,178,94,.14);
+      box-shadow: 0 10px 30px rgba(0,0,0,.25);
+      display:block;
+    }
+    @media (max-width: 980px){
+      .heroGrid{grid-template-columns:1fr}
+      h1{font-size:36px}
+      .grid3{grid-template-columns:1fr}
+      .grid2{grid-template-columns:1fr}
+      .contacts{grid-template-columns:1fr}
+      .promoGrid{grid-template-columns: repeat(2, 1fr);}
+    }
+  </style>
+
+  <!-- Schema.org (LocalBusiness) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BeautySalon",
+    "name":"Студия Моя Проспект",
+    "description":"Лазерная эпиляция в Казани. Диодный аппарат. Бикини, подмышки, ноги, лицо, руки. Запись в WhatsApp.",
+    "address":{
+      "@type":"PostalAddress",
+      "streetAddress":"Проспект Победы 139А корпус 2",
+      "addressLocality":"Казань",
+      "addressCountry":"RU"
+    },
+    "telephone":"+7 915 410-36-35",
+    "priceRange":"$$"
+  }
+  </script>
+</head>
+
+<body>
+  <div class="topbar">
+    <div class="wrap">
+      <div class="row">
+        <div class="brand">
+          <div class="logoDot" aria-hidden="true"></div>
+          <div>Студия <span class="gold">Моя Проспект</span></div>
+        </div>
+
+        <nav class="nav">
+          <a href="#services">Услуги</a>
+          <a href="#promo">Комплексы</a>
+          <a href="#how">Как проходит</a>
+          <a href="#prep">Подготовка</a>
+          <a href="#prices">Цены</a>
+          <a href="#contacts">Контакты</a>
+        </nav>
+
+        <div class="cta">
+          <a class="btn secondary" href="tel:+79154103635">Позвонить</a>
+          <a class="btn" href="https://wa.me/79154103635" target="_blank" rel="noopener">Записаться</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="wrap">
+      <div class="heroGrid">
+        <div class="heroCard">
+          <div class="kicker">✨ Диодный аппарат • Комфортно • Премиальная атмосфера</div>
+          <h1>Лазерная эпиляция <span class="gold">в Казани</span><br/>гладкость курсом</h1>
+          <p class="lead">
+            Профессиональная диодная лазерная эпиляция: бикини, подмышки, ноги, лицо, руки.
+            Индивидуальные настройки под тип кожи и волос. Комфортно даже на чувствительных зонах.
+          </p>
+
+          <div class="heroBadges">
+            <div class="badge">Результат уже после 1 процедуры</div>
+            <div class="badge">Без вросших волос</div>
+            <div class="badge">Быстро: 10–45 минут</div>
+          </div>
+
+          <div class="heroActions" id="booking">
+            <a class="btn" href="https://wa.me/79154103635" target="_blank" rel="noopener">Записаться в WhatsApp</a>
+            <a class="btn secondary" href="tel:+79154103635">Позвонить: +7 915 410 36 35</a>
+          </div>
+
+          <div class="mini">
+            📍 Адрес: <span class="muted">Казань, Проспект Победы 139А корпус 2</span>
+          </div>
+        </div>
+
+        <div class="sideCard">
+          <div>
+            <div class="sideTitle">Почему к нам приходят</div>
+            <ul class="sideList">
+              <li>Диодный аппарат — эффективная работа по волосу</li>
+              <li>Индивидуальный подбор мощности</li>
+              <li>Стерильность и аккуратность</li>
+              <li>Комфорт, приватность, забота о клиенте</li>
+            </ul>
+          </div>
+
+          <div class="pill">
+            <div>
+              <div><strong>Готовые комплексы</strong></div>
+              <div>выгоднее, чем по отдельности</div>
+            </div>
+            <a class="btn" href="#promo">Смотреть</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <div class="sectionTitle">
+        <h2>Преимущества</h2>
+        <p class="sub">Без лишних обещаний — только то, что важно клиенту</p>
+      </div>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>Диодный лазер</h3>
+          <p>Эффективно снижает рост волос, работает курсом. Настройки под вашу кожу и волос.</p>
+        </div>
+        <div class="card">
+          <h3>Комфорт</h3>
+          <p>Процедура проходит аккуратно. Подходим бережно к деликатным зонам.</p>
+        </div>
+        <div class="card">
+          <h3>Чистота и безопасность</h3>
+          <p>Соблюдаем стерильность, используем одноразовые расходники и обработку поверхностей.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <h2>Услуги лазерной эпиляции</h2>
+        <p class="sub">Описания под Яндекс-поиск и конверсию</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>Глубокое бикини</h3>
+          <p>Полное удаление волос в интимной зоне для максимальной гладкости и комфорта.</p>
+          <ul>
+            <li>Самая популярная зона</li>
+            <li>Комфортно для чувствительной кожи</li>
+            <li>Время: ~20–30 минут</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Классическое бикини</h3>
+          <p>Удаление волос по линии белья — аккуратный эстетичный результат.</p>
+          <ul>
+            <li>Без раздражения после бритья</li>
+            <li>Время: ~15–20 минут</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Подмышки</h3>
+          <p>Быстро, комфортно, уменьшается раздражение и риск вросших волос.</p>
+          <ul>
+            <li>Время: ~10–15 минут</li>
+            <li>Часто кожа становится визуально ровнее</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Ноги (голени / полностью)</h3>
+          <p>Гладкость без ежедневного бритья: обработка голеней или ног полностью.</p>
+          <ul>
+            <li>Голени: ~20–25 минут</li>
+            <li>Ноги полностью: ~35–45 минут</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Лицо (верхняя губа / подбородок)</h3>
+          <p>Точечная работа, аккуратно и безопасно. Подходит при нежелательном росте волос.</p>
+          <ul>
+            <li>Время: ~10–15 минут</li>
+            <li>Важно соблюдать рекомендации до/после</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Руки (до локтя / полностью)</h3>
+          <p>Ухоженный вид без воска и шугаринга. Комфортная обработка зоны курсом.</p>
+          <ul>
+            <li>До локтя: ~15–20 минут</li>
+            <li>Полностью: ~25–30 минут</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="promo">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <h2>Комплексы (выгодные пакеты)</h2>
+        <p class="sub">Добавьте ваши 4 картинки — они отлично продают</p>
+      </div>
+
+      <div class="promoGrid">
+        <img src="komplekt-1.png" alt="Комплекс 1" />
+        <img src="komplekt-2.png" alt="Комплекс 2" />
+        <img src="komplekt-3.png" alt="Комплекс 3" />
+        <img src="komplekt-4.png" alt="Комплекс 4" />
+      </div>
+
+      <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="btn" href="https://wa.me/79154103635" target="_blank" rel="noopener">Хочу комплекс — записаться</a>
+        <a class="btn secondary" href="#prices">Смотреть цены</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="how">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <h2>Как проходит процедура</h2>
+        <p class="sub">Понятно и спокойно</p>
+      </div>
+
+      <div class="grid3">
+        <div class="card">
+          <h3>1) Консультация</h3>
+          <p>Уточняем цели, тип кожи/волос, исключаем противопоказания, выбираем параметры.</p>
+        </div>
+        <div class="card">
+          <h3>2) Процедура</h3>
+          <p>Аккуратная обработка зоны диодным лазером. Длительность 10–45 минут.</p>
+        </div>
+        <div class="card">
+          <h3>3) Рекомендации</h3>
+          <p>Расскажем, как ухаживать за кожей и как выглядит план курса.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="prep">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <h2>Как подготовиться</h2>
+        <p class="sub">Чтобы эффект был максимальным и безопасным</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <h3>До процедуры</h3>
+          <ul>
+            <li>Сбрить зону за 8–24 часа (не выдёргивать волосы!)</li>
+            <li>Не загорать 7–14 дней до</li>
+            <li>Не использовать скрабы/кислоты 2–3 дня</li>
+            <li>Сообщить о лекарствах (если принимаете)</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>После процедуры</h3>
+          <ul>
+            <li>Не баня/сауна/спорт 24–48 часов</li>
+            <li>SPF 30–50 на открытые зоны</li>
+            <li>Увлажнение кожи, без агрессивных средств</li>
+            <li>Между сеансами — только бритьё</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="card">
+        <h3>Противопоказания (кратко)</h3>
+        <p>
+          Онкология, острые кожные воспаления в зоне, тяжёлые обострения хронических заболеваний,
+          приём некоторых препаратов (уточним). При сомнениях — напишите нам в WhatsApp перед записью.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="prices">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <h2>Цены</h2>
+        <p class="sub">Можно оставить «от», а можно вставить точные цены</p>
+      </div>
+
+      <div class="card">
+        <div class="priceRow"><span>Глубокое бикини</span> <span class="price">от XXXX ₽</span></div>
+        <div class="priceRow"><span>Классическое бикини</span> <span class="price">от XXXX ₽</span></div>
+        <div class="priceRow"><span>Подмышки</span> <span class="price">от XXXX ₽</span></div>
+        <div class="priceRow"><span>Голени</span> <span class="price">от XXXX ₽</span></div>
+        <div class="priceRow"><span>Ноги полностью</span> <span class="price">от XXXX ₽</span></div>
+        <div class="priceRow"><span>Лицо (верхняя губа/подбородок)</span> <span class="price">от XXXX ₽</span></div>
+        <div class="priceRow"><span>Руки (до локтя/полностью)</span> <span class="price">от XXXX ₽</span></div>
+        <div class="divider"></div>
+        <p style="margin:0;color:var(--muted);font-size:13px;">
+          *Итоговая стоимость зависит от зоны и индивидуальных особенностей. Уточним перед процедурой.
+        </p>
+      </div>
+
+      <div style="margin-top:14px; display:flex; gap:10px; flex-wrap:wrap;">
+        <a class="btn" href="https://wa.me/79154103635" target="_blank" rel="noopener">Уточнить стоимость в WhatsApp</a>
+        <a class="btn secondary" href="tel:+79154103635">Позвонить</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <h2>FAQ</h2>
+        <p class="sub">Частые вопросы</p>
+      </div>
+
+      <details>
+        <summary>Это больно?</summary>
+        <p>Ощущения индивидуальны: чаще всего лёгкое тепло/покалывание. Мы работаем аккуратно и комфортно.</p>
+      </details>
+      <details>
+        <summary>Сколько нужно процедур?</summary>
+        <p>Обычно 6–8 с интервалом 3–5 недель. План курса индивидуален.</p>
+      </details>
+      <details>
+        <summary>Можно ли между процедурами делать шугаринг/воск?</summary>
+        <p>Нет. Между сеансами — только бритьё, чтобы не выдёргивать волос с луковицей.</p>
+      </details>
+      <details>
+        <summary>Когда будет результат?</summary>
+        <p>Часть волос выпадает через 7–14 дней после процедуры, рост замедляется.</p>
+      </details>
+    </div>
+  </section>
+
+  <section id="contacts">
+    <div class="wrap">
+      <div class="sectionTitle">
+        <h2>Контакты</h2>
+        <p class="sub">Запись и консультация</p>
+      </div>
+
+      <div class="contacts">
+        <div class="card">
+          <h3>Студия Моя Проспект ❤️</h3>
+          <p>
+            📍 <b>Казань, Проспект Победы 139А корпус 2</b><br/>
+            📞 Телефон: <a class="mutedLink" href="tel:+79154103635">+7 915 410 36 35</a><br/>
+            💬 WhatsApp: <a class="mutedLink" href="https://wa.me/79154103635" target="_blank" rel="noopener">написать</a><br/>
+          </p>
+
+          <div class="divider"></div>
+
+          <a class="btn" href="https://wa.me/79154103635" target="_blank" rel="noopener">Записаться сейчас</a>
+          <a class="btn secondary" style="margin-top:10px" href="tel:+79154103635">Позвонить</a>
+
+          <div class="divider"></div>
+
+          <!-- vCard для добавления контакта (опционально): вставьте файл .vcf на сайт и укажите ссылку -->
+          <p style="margin:0;color:var(--muted);font-size:13px;">
+            Хотите, добавлю кнопку «Сохранить контакт» (vCard .vcf) — скажите, и сделаю.
+          </p>
+        </div>
+
+        <div class="mapBox" aria-label="Карта">
+          <!-- Вставьте сюда iframe Яндекс.Карт:
+               Откройте Яндекс.Карты → найдите адрес → Поделиться → Встроить карту → скопируйте iframe и вставьте сюда -->
+          <div style="padding:16px;color:var(--muted);font-size:14px;">
+            Здесь будет карта. Вставьте iframe из Яндекс.Карт для адреса:
+            <br/><b>Казань, Проспект Победы 139А корпус 2</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <div style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;">
+        <div>© <span id="y"></span> Студия Моя Проспект • Лазерная эпиляция Казань</div>
+        <div>Политика конфиденциальности • Оферта</div>
+      </div>
+    </div>
+    <script>
+      document.getElementById('y').textContent = new Date().getFullYear();
+    </script>
+  </footer>
+</body>
+</html>
